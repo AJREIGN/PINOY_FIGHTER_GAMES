@@ -1,22 +1,22 @@
 import Phaser from "phaser";
 
 // 🎮 Import all your game scenes
-import BootScene from "/scenes/BootScene.js";
-import PreloadScene from "/scenes/PreloadScene.js";
-import LoadingScreenScene from "/scenes/LoadingScreenScene.js";
-import MenuScene from "/scenes/MenuScene.js";
-import SinglePlayerMenuScene from "/scenes/SinglePlayerMenuScene.js";  
-import ArcadeModeScene from "/scenes/ArcadeModeScene.js";
-import StageSelectScene from "/scenes/StageSelectScene.js"; 
-import FinalizationScene from "/scenes/FinalizationScene.js";
-import FightScene_manigbasay from "/scenes/FightScene_manigbasay.js";
-import FightScene_LapuLapu from "/scenes/FightScene_LapuLapu.js";
-import FightScene_Magellan from "/scenes/FightScene_Magellan.js";
-import FightScene_Panday from "/scenes/FightScene_Panday.js";
-import TwoPlayerModeScene from "/scenes/TwoPlayerModeScene.js";
-import StageSelectScene_2P from "/scenes/StageSelectScene_2P.js";
-import FinalizationScene_2P from "/scenes/FinalizationScene_2P.js";
-import FightScene_2P from "/scenes/FightScene_2P.js";
+import BootScene from "./scenes/BootScene.js";
+import PreloadScene from "./scenes/PreloadScene.js";
+import LoadingScreenScene from "./scenes/LoadingScreenScene.js";
+import MenuScene from "./scenes/MenuScene.js";
+import SinglePlayerMenuScene from "./scenes/SinglePlayerMenuScene.js";  
+import ArcadeModeScene from "./scenes/ArcadeModeScene.js";
+import StageSelectScene from "./scenes/StageSelectScene.js"; 
+import FinalizationScene from "./scenes/FinalizationScene.js";
+import FightScene_manigbasay from "./scenes/FightScene_manigbasay.js";
+import FightScene_LapuLapu from "./scenes/FightScene_LapuLapu.js";
+import FightScene_Magellan from "./scenes/FightScene_Magellan.js";
+import FightScene_Panday from "./scenes/FightScene_Panday.js";
+import TwoPlayerModeScene from "./scenes/TwoPlayerModeScene.js";
+import StageSelectScene_2P from "./scenes/StageSelectScene_2P.js";
+import FinalizationScene_2P from "./scenes/FinalizationScene_2P.js";
+import FightScene_2P from "./scenes/FightScene_2P.js";
 
 
 // 🧍 Global Player Manager (for local data)
@@ -80,5 +80,6 @@ const config = {
 
 // 🚀 Launch Game
 new Phaser.Game(config);
+
 
 
