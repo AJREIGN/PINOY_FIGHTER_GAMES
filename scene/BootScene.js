@@ -6,8 +6,8 @@ export default class BootScene extends Phaser.Scene {
   }
 
   preload() {
-    this.load.image("logo", "assets/images/phaser-logo.png");
-    this.load.image("bg", "assets/images/background.png");
+    this.load.image("logo", "/assets/images/phaser-logo.png");
+    this.load.image("bg", "/assets/images/background.png");
     
   }
 
@@ -40,3 +40,4 @@ export default class BootScene extends Phaser.Scene {
 });
   }
 }
+
