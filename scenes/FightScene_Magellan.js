@@ -37,7 +37,7 @@ export default class FightScene_Magellan extends Phaser.Scene {
                 );
             });
     
-            const aiChoices = ["panday", "hunter", "lapulapu"];
+            const aiChoices = ["panday", "hunter", "LapuLapu"];
             this.aiChar = Phaser.Utils.Array.GetRandom(aiChoices);
             charSheets.forEach(sheet => {
                 this.load.spritesheet(
@@ -423,3 +423,4 @@ export default class FightScene_Magellan extends Phaser.Scene {
     });
 }
 }
+
