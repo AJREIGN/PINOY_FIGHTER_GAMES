@@ -15,7 +15,7 @@ export default class ArcadeModeScene extends Phaser.Scene {
       frameWidth: 180,
       frameHeight: 180,
     });
-    this.load.spritesheet("lapulapu", "assets/characters/LapuLapu/idle.png", {
+    this.load.spritesheet("LapuLapu", "assets/characters/LapuLapu/idle.png", {
       frameWidth: 180,
       frameHeight: 180,
     });
@@ -51,7 +51,7 @@ export default class ArcadeModeScene extends Phaser.Scene {
     // 🧍 Character List
     const characters = [
       { name: "Hunter", key: "hunter" },
-      { name: "Lapu-Lapu", key: "lapulapu" },
+      { name: "LapuLapu", key: "LapuLapu" },
       { name: "Panday", key: "panday" },
       { name: "Magellan", key: "magellan" },
     ];
@@ -118,7 +118,7 @@ export default class ArcadeModeScene extends Phaser.Scene {
       portrait.on("pointerdown", () => {
         this.cameras.main.fadeOut(400, 0, 0, 0);
         this.cameras.main.once("camerafadeoutcomplete", () => {
-          this.scene.start("StageSelectScene", { selectedCharacter: char.name });
+          this.scene.start("StageSelectScene", { selectedCharacter: char.key });
         });
       });
     });
@@ -143,3 +143,4 @@ export default class ArcadeModeScene extends Phaser.Scene {
     });
   }
 }
+
