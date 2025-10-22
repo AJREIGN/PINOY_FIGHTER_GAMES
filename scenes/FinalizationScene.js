@@ -51,7 +51,7 @@ export default class FinalizationScene extends Phaser.Scene {
     // Load character sprite
     const charMap = {
       "Hunter": "hunter",
-      "Lapu-Lapu": "lapulapu",
+      "LapuLapu": "LapuLapu",
       "Panday": "panday",
       "Magellan": "magellan"
     };
@@ -143,7 +143,7 @@ export default class FinalizationScene extends Phaser.Scene {
     this.cameras.main.once("camerafadeoutcomplete", () => {
       var nextScene = {
         "Hunter": "FightScene_manigbasay",
-        "Lapu-Lapu": "FightScene_LapuLapu",
+        "LapuLapu": "FightScene_LapuLapu",
         "Panday": "FightScene_Panday",
         "Magellan": "FightScene_Magellan"
       }[this.selectedCharacter] || "FightScene_Juan";
@@ -156,3 +156,4 @@ export default class FinalizationScene extends Phaser.Scene {
     });
   }
 }
+
