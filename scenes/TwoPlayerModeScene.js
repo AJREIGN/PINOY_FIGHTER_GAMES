@@ -10,7 +10,7 @@ export default class TwoPlayerModeScene extends Phaser.Scene {
     this.load.image("frame", "/assets/images/frame.png");
 
     this.load.spritesheet("hunter", "/assets/characters/hunter/idle.png", { frameWidth: 180, frameHeight: 180 });
-    this.load.spritesheet("lapulapu", "/assets/characters/LapuLapu/idle.png", { frameWidth: 180, frameHeight: 180 });
+    this.load.spritesheet("LapuLapu", "/assets/characters/LapuLapu/idle.png", { frameWidth: 180, frameHeight: 180 });
     this.load.spritesheet("panday", "/assets/characters/panday/idle.png", { frameWidth: 180, frameHeight: 180 });
     this.load.spritesheet("magellan", "/assets/characters/magellan/idle.png", { frameWidth: 180, frameHeight: 180 });
   }
@@ -33,7 +33,7 @@ export default class TwoPlayerModeScene extends Phaser.Scene {
 
     const characters = [
       { name: "Hunter", key: "hunter" },
-      { name: "Lapu-Lapu", key: "lapulapu" },
+      { name: "LapuLapu", key: "LapuLapu" },
       { name: "Panday", key: "panday" },
       { name: "Magellan", key: "magellan" },
     ];
@@ -117,3 +117,4 @@ export default class TwoPlayerModeScene extends Phaser.Scene {
     });
   }
 }
+
