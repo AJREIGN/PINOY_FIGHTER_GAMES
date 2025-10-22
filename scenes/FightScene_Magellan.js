@@ -423,4 +423,3 @@ export default class FightScene_Magellan extends Phaser.Scene {
     });
 }
 }
-
